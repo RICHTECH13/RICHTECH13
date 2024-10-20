@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Empresa de Aguacate Hass</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><img src="IMAGEN/LOGO HASS MODELO 3 PNG.png" alt="Logo de la Empresa" class="logo"></a>
+            <nav>
+                <ul>
+                    <li class="nav-nosotros dropdown">
+                        <a href="javascript:void(0);">Nosotros</a>
+                        <div class="dropdown-content">
+                            <h3>Información de la Empresa</h3>
+                            <a href="contexto.html">Contexto</a>
+                            <a href="historia.html">Historia</a>
+                            <a href="produccion.html">Proceso de producción</a>
+                        </div>
+                    </li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="envios.html">Envíos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="IMAGEN/nosotros 1.jpeg" alt="Nosotros Imagen 1" width="800" height="678"></div>
+                <div class="swiper-slide"><img src="IMAGEN/nosotros 2.jpeg" alt="Nosotros Imagen 2" width="800" height="678"></div>
+                <div class="swiper-slide"><img src="IMAGEN/nosotros 3.jpeg" alt="Nosotros Imagen 3" width="800" height="678"></div>
+                <div class="swiper-slide"><img src="IMAGEN/vision 2.jpeg" alt="Nosotros Imagen 3" width="800" height="678"></div>
+                <div class="swiper-slide"><img src="IMAGEN/vision.jpeg" alt="Nosotros Imagen 3" width="800" height="678"></div>
+            </div>
+            <!-- Añadir paginación -->
+            <div class="swiper-pagination"></div>
+            <!-- Añadir botones de navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Contenedor para imágenes de enlaces -->
+        <div class="link-images">
+            <a href="https://enlace1.com"><img src="IMAGEN/app.webp" alt="Enlace 1" class="link-image"></a>
+            <a href="https://enlace2.com"><img src="IMAGEN/game.webp" alt="Enlace 2" class="link-image"></a>
+        </div>
+    </div>
+    <!-- Redes sociales -->
+    <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=100013029033462"><img src="IMAGEN/logo facebook png.png" alt="Facebook" width="40" height="40"></a>
+        <a href="https://wa.me/+57313995101"><img src="IMAGEN/logo whatsapp png.png" alt="Twitter" width="40" height="40"></a>
+        <a href="https://www.instagram.com/rich_2026/"><img src="IMAGEN/logo insta png.png" alt="Instagram" width="40" height="40"></a>
+    </div>
+    <div class="container">
+        <div class="video-container">
+            <video width="735" height="450"  controls>
+                <source src="IMAGEN/Y2meta.app-Como se realiza exportacion de aguacate Hass - TvAgro por Juan Gonzalo Angel Restrepo-(1080p).mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="text-container">
+            <h2>CALIDAD QUE CRECE EN CADA AGUACATE</h2>
+            <p>Nos dedicamos a cultivar aguacates Hass de la más alta calidad, garantizando que cada fruto que llega a tu mesa esté lleno de sabor, nutrición y frescura. Nos esforzamos por perfeccionar cada etapa del proceso de cultivo para ofrecerte un producto que refleje nuestro compromiso con la excelencia y la sostenibilidad.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Empresa de Aguacate Hass. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+     var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    spaceBetween: 10,
+    grabCursor: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+ 
+});
+    </script>
+    <script>
+        // Obtener la URL actual
+        const currentUrl = window.location.pathname;
+    
+        // Obtener todos los enlaces de navegación
+        const navLinks = document.querySelectorAll('nav a');
+    
+        // Recorrer los enlaces para verificar cuál es el enlace actual
+        navLinks.forEach(link => {
+            if (link.href.includes(currentUrl)) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

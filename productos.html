@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Empresa de Aguacate Hass</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><img src="IMAGEN/LOGO HASS MODELO 3 PNG.png" alt="Logo de la Empresa" class="logo"></a>
+            <nav>
+                <ul>
+                    <li class="nav-nosotros dropdown">
+                        <a href="javascript:void(0);">Nosotros</a>
+                        <div class="dropdown-content">
+                            <h3>Información de la Empresa</h3>
+                            <a href="contexto.html">Contexto</a>
+                            <a href="historia.html">Historia</a>
+                            <a href="produccion.html">Proceso de producción</a>
+                        </div>
+                    </li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="envios.html">Envíos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <main>
+        <section id="products" class="section">
+            <h2 class="section-title">Productos</h2>
+            <div class="product">
+                <img src="producto1.jpg" alt="Producto 1">
+                <div class="product-info">
+                    <h3>Producto 1</h3>
+                    <p>Descripción del Producto 1.</p>
+                    <p>Precio: $XX.XX</p>
+                    <p>Más información sobre el producto.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="producto2.jpg" alt="Producto 2">
+                <div class="product-info">
+                    <h3>Producto 2</h3>
+                    <p>Descripción del Producto 2.</p>
+                    <p>Precio: $XX.XX</p>
+                    <p>Más información sobre el producto.</p>
+                </div>
+            </div>
+            <!-- Añadir más productos según sea necesario -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Empresa de Aguacate Hass. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Obtener la URL actual
+        const currentUrl = window.location.pathname;
+    
+        // Obtener todos los enlaces de navegación
+        const navLinks = document.querySelectorAll('nav a');
+    
+        // Recorrer los enlaces para verificar cuál es el enlace actual
+        navLinks.forEach(link => {
+            if (link.href.includes(currentUrl)) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

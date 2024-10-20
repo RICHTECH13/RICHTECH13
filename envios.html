@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Empresa de Aguacate Hass</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><img src="IMAGEN/LOGO HASS MODELO 3 PNG.png" alt="Logo de la Empresa" class="logo"></a>
+            <nav>
+                <ul>
+                    <li class="nav-nosotros dropdown">
+                        <a href="javascript:void(0);">Nosotros</a>
+                        <div class="dropdown-content">
+                            <h3>Información de la Empresa</h3>
+                            <a href="contexto.html">Contexto</a>
+                            <a href="historia.html">Historia</a>
+                            <a href="produccion.html">Proceso de producción</a>
+                        </div>
+                    </li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="envios.html">Envíos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <main>
+        <section id="shipping" class="section">
+            <h2 class="section-title">Envíos</h2>
+            <p>Ofrecemos envíos a nivel nacional y estamos preparados para la exportación internacional de nuestros productos.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Empresa de Aguacate Hass. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Obtener la URL actual
+        const currentUrl = window.location.pathname;
+    
+        // Obtener todos los enlaces de navegación
+        const navLinks = document.querySelectorAll('nav a');
+    
+        // Recorrer los enlaces para verificar cuál es el enlace actual
+        navLinks.forEach(link => {
+            if (link.href.includes(currentUrl)) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

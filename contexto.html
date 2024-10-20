@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Empresa de Aguacate Hass</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><img src="IMAGEN/LOGO HASS MODELO 3 PNG.png" alt="Logo de la Empresa" class="logo"></a>
+            <nav>
+                <ul>
+                    <li class="nav-nosotros dropdown">
+                        <a href="javascript:void(0);">Nosotros</a>
+                        <div class="dropdown-content">
+                            <h3>Información de la Empresa</h3>
+                            <a href="contexto.html">Contexto</a>
+                            <a href="historia.html">Historia</a>
+                            <a href="produccion.html">Proceso de producción</a>
+                        </div>
+                    </li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="envios.html">Envíos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <main>
+        <section id="shipping" class="section">
+            <h2 class="section-title">Contexto</h2>
+            <p>Somos una empresa en crecimiento, dedicada a la agricultura y al cultivo de aguacates Hass de la más alta calidad. Actualmente contamos con 1,000 matas en producción, y nos esforzamos por seguir consolidando nuestra presencia en el sector agrícola local, apostando por la sostenibilidad y la innovación en cada etapa del proceso de cultivo.
+
+                Nuestro compromiso es llevar a nuestros clientes productos frescos y nutritivos, cultivados con el mayor respeto por el medio ambiente y por el bienestar de nuestra comunidad. Nos enorgullece ser parte del desarrollo de la región, generando oportunidades y aportando a la economía local a través de nuestras buenas prácticas agrícolas.
+                
+
+                En nuestra finca contamos con un equipo de colaboradores dedicados a optimizar cada parte del proceso, desde la siembra hasta la cosecha y el empaque, asegurándonos de entregar un producto que cumpla con los más altos estándares de calidad. Gracias a nuestra infraestructura y nuestra visión a largo plazo, estamos preparados para expandir nuestra capacidad de producción y llegar a nuevos mercados, tanto nacionales como internacionales.
+                
+                Nos apasiona el potencial de nuestros aguacates Hass y la oportunidad de llevar nuestra marca más allá de nuestras fronteras, mientras seguimos construyendo una historia de calidad, compromiso y crecimiento sostenible.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Empresa de Aguacate Hass. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Obtener la URL actual
+        const currentUrl = window.location.pathname;
+    
+        // Obtener todos los enlaces de navegación
+        const navLinks = document.querySelectorAll('nav a');
+    
+        // Recorrer los enlaces para verificar cuál es el enlace actual
+        navLinks.forEach(link => {
+            if (link.href.includes(currentUrl)) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
