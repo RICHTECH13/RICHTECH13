@@ -8,7 +8,7 @@ body {
     background-color: #ffffff;
     color: #8B4513;
     overflow-x: hidden;
-   /*cursor: url('IMAGEN/agucate2cur.png'), auto;*/
+   
 }
 
 header {
@@ -72,6 +72,29 @@ nav a.active {
     color: #45a049; /* Color cuando el enlace está activo */
 }
 
+.section-title2{
+    margin-left: -600px !important; /* Ajusta este valor según la distancia que necesites */
+}
+
+
+.whatsapp-logo{
+    margin-left: -550px !important;
+    width: 50px;
+}
+
+.contact-info{
+    margin-top: -130px !important;
+}
+
+.contact-info2{
+    margin-top: -8px !important;
+    margin-left: -7px;
+}
+
+.telefono-logo{
+    margin-left: -550px !important;
+    width: 40px;
+}
 /* Dropdown */
 .dropdown-content {
     display: flex;
@@ -127,12 +150,14 @@ main {
 
 footer {
     background-color: #f2ff8f; /* Marrón */
+    position: static;
     color: #8B4513;
     font-weight: bold;
     text-align: center;
     padding: 1em 0;
     width: 100%;
-    margin-top: auto; /* Empuja el footer al final */
+    clear: both;
+    margin-top: auto !important; /* Empuja el footer al final */
 }
 
 .contact-section {
@@ -188,6 +213,19 @@ button:hover {
     background-color: #45a049;
 }
 
+.map-container {
+    width: 20px;
+    height: 300px;
+    margin-top: -400px;
+    margin-left: 270px !important;/* Ajusta el margen según lo necesites */
+    display: flex;
+    margin-bottom: 50px; /* Agrega margen para que el footer no se superponga */
+}
+
+.container {
+    padding-bottom: 200px; /* Un poco de espacio extra */
+}
+
 .social-media {
     position: fixed;
     top: 400px;
@@ -206,6 +244,7 @@ button:hover {
 .main-content {
     padding: 20px;
     text-align: center;
+    flex: 1;
 }
 
 .video-container {
@@ -254,6 +293,7 @@ button:hover {
     color: #d6e045; /* Cambia este valor por el color que desees */
 }
 
+
 .swiper-container {
     width: 80%;
     height: 700px;
@@ -263,6 +303,31 @@ button:hover {
 
 .swiper-container img {
     width: 101%; /* Asegúrate de que las imágenes se ajusten al contenedor */
+}
+
+.product {
+    margin-top: 20px;
+}
+
+.product2 {
+    margin-top: 0px;
+}
+
+.product-info{
+    margin-left: 580px;
+}
+
+.product-info2{
+    margin-left: 580px;
+    margin-top: 0px;
+}
+
+.imagen-aguacate{
+    margin-top: -280px;
+}
+
+.imagen-mora{
+    margin-top: -400px !important;
 }
 
 .dropdown-content {
@@ -332,17 +397,4 @@ nav .dropdown > a {
 }
 .nav-nosotros:hover > a {
     color: #45a049;
-}
-/*
-a:hover {
-    cursor: url('IMAGEN/agucate3cur.png'), pointer !important; 
-}
-.grab-cursor {
-    cursor: url('IMAGEN/cursor4.png'), grabbing !important;
-}
-video {
-    cursor: url('IMAGEN/agucate3cur.png'), pointer;
-}
-.social-media-icon {
-    cursor: url('IMAGEN/agucate3cur.png'), pointer;
 }
